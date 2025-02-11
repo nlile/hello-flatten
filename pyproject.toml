@@ -4,17 +4,17 @@ version = "0.1.0"
 description = ""
 authors = ["nathan <7707104+nlile@users.noreply.github.com>"]
 readme = "README.md"
+packages = [{include = "hello_flatten"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 pydantic = "^2.6.1"
 tenacity = "^8.2.3"
 loguru = "^0.7.2"
-hello_flatten = {path = ".", develop = true}
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-hello-flatten = "hello_flatten.main:main"
+hello-flatten = "hello_flatten.hello.world:main"
