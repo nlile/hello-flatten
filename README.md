@@ -58,19 +58,3 @@ poetry run ruff check .
 # Type check
 poetry run mypy .
 ```
-
-## Project Structure
-
-```
-hello_flatten/
-├── hello/
-│   └── world.py      # Main greeting functionality
-├── world/
-│   └── hello.py      # Mirror module for testing
-└── __init__.py       # Package initialization
-```
-
-## License
-
-MIT
-
